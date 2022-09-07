@@ -1,0 +1,26 @@
+/**
+ * Write here your global css styles
+ */
+:root {
+    --color-1: #F5F6F6;
+    --color-2: #666767;
+    --color-3: #979797;
+    --font-family: 'Poppins', sans-serif;
+}
+
+a {
+    color: #1a1a1a;
+    text-decoration: none;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+    background-color: var(--color-1);
+    font-family: var(--font-family);
+}
+
+input, button {
+    font-family: var(--font-family);
+}
