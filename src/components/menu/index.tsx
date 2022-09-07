@@ -6,27 +6,27 @@ export default component$(() => {
     item: [
       {
         name: "Técnologia",
-        link: "/vectores",
+        link: "https://www.youtube.com/channel/UCgrIGp5QAnC0J8LfNJxDRDw",
       },
       {
         name: "Programación",
-        link: "/photos",
+        link: "https://www.youtube.com/channel/UCgrIGp5QAnC0J8LfNJxDRDw",
       },
       {
         name: "Qwik",
-        link: "/psd",
+        link: "https://www.youtube.com/channel/UCgrIGp5QAnC0J8LfNJxDRDw",
       },
       {
         name: "Angular",
-        link: "/video",
+        link: "https://www.youtube.com/channel/UCgrIGp5QAnC0J8LfNJxDRDw",
       },
       {
         name: "React",
-        link: "/video",
+        link: "https://www.youtube.com/channel/UCgrIGp5QAnC0J8LfNJxDRDw",
       },
       {
         name: "Node",
-        link: "/video",
+        link: "https://www.youtube.com/channel/UCgrIGp5QAnC0J8LfNJxDRDw",
       },
     ],
   });
@@ -35,7 +35,11 @@ export default component$(() => {
     <div className="menu">
       <ul>
         {state.item.map((menu) => (
-          <li>{menu.name}</li>
+          <li>
+            <a target={"_blank"} href={menu.link}>
+              {menu.name}
+            </a>
+          </li>
         ))}
       </ul>
     </div>

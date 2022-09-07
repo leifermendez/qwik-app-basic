@@ -24,9 +24,9 @@ export default component$(() => {
   return (
     <div className="section">
       <div className="highlight-one">
-        <h1>Popular Pro Stock Vectors</h1>
+        <h1>Mi primera App en Qwik 🙌</h1>
         <h4>
-          Esta pagina esta hecha con {state.src}{" "}
+          Esta pagina esta hecha con{" "}
           <a
             style={{ "font-weight": 600 }}
             target="_blank"
@@ -34,7 +34,6 @@ export default component$(() => {
           >
             Qwik
           </a>{" "}
-          {state.src}
           by{" "}
           <a
             style={{ "font-weight": 600 }}
@@ -48,7 +47,7 @@ export default component$(() => {
       <div className="input-src">
         <input
           onKeyUp$={(ev) => (state.src = (ev.target as HTMLInputElement).value)}
-          placeholder="Search Pet..."
+          placeholder="Buscar por nombre del perro..."
           type="text"
         />
       </div>
@@ -59,44 +58,44 @@ export default component$(() => {
 export const getPeople = (searchInput: string | undefined) => {
   const MOCK_DATA = [
     {
-      title: `Max`,
+      title: "Max",
       description: "Es un perro alegre y juegueton",
-      link: "/1",
+      link: "/max",
       image:
         "https://images.unsplash.com/photo-1543466835-00a7907e9de1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80",
     },
     {
       title: "Marly",
       description: "Es un perro alegre y juegueton",
-      link: "",
+      link: "/marly",
       image:
         "https://images.unsplash.com/photo-1561037404-61cd46aa615b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8ZG9nfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
     },
     {
       title: "Bob",
       description: "Es un perro alegre y juegueton",
-      link: "",
+      link: "/bob",
       image:
         "https://images.unsplash.com/photo-1517849845537-4d257902454a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80",
     },
     {
       title: "Shadow",
       description: "Es un perro alegre y juegueton",
-      link: "",
+      link: "/shadow",
       image:
         "https://images.unsplash.com/photo-1583512603805-3cc6b41f3edb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8ZG9nfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
     },
     {
       title: "Copo",
       description: "Es un perro alegre y juegueton",
-      link: "",
+      link: "/copo",
       image:
         "https://images.unsplash.com/photo-1477884213360-7e9d7dcc1e48?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTN8fGRvZ3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
     },
     {
       title: "Rails",
       description: "Es un perro alegre y juegueton",
-      link: "",
+      link: "/rails",
       image:
         "https://images.unsplash.com/photo-1597633425046-08f5110420b5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fGRvZ3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
     },

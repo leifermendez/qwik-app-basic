@@ -28,7 +28,19 @@ export const SectionStyle = `
     .section-card{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        padding: 2rem 20rem;
+        padding: 2rem 15vw;
         gap:1rem
+    }
+    @media screen and (max-width: 880px) {
+      .section-card {
+          padding: 2rem;
+          grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    @media screen and (max-width: 600px) {
+      .section-card {
+          padding: 2rem;
+          grid-template-columns: repeat(1, 1fr);
+      }
     }
 `;
