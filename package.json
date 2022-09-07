@@ -4,7 +4,7 @@
   "scripts": {
     "build": "npm run typecheck && npm run build.client && npm run build.ssr",
     "build.client": "vite build",
-    "build.ssr": "vite build --ssr src/entry.express.tsx",
+    "build.ssr": "vite build --ssr src/entry.netlify.ts",
     "dev": "npm run dev.ssr",
     "dev.client": "vite",
     "dev.debug": "node --inspect-brk node_modules/vite/bin/vite.js --force --mode ssr",
